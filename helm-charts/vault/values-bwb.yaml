@@ -1,0 +1,7 @@
+injector:
+  enabled: true
+  replicas: 1
+
+server:
+  enabled: false
+
