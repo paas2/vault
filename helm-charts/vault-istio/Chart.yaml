@@ -1,0 +1,5 @@
+apiVersion: v2
+name: vault-istio
+version: 1.0.0
+appVersion: 1.0.0
+description: HashiCorp Vault Istio Comp Chart
