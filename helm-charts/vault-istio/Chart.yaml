@@ -2,4 +2,11 @@ apiVersion: v2
 name: vault-istio
 version: 1.0.0
 appVersion: 1.0.0
-description: HashiCorp Vault Istio Comp Chart
+kubeVersion: ">= 1.14.0-0"
+description: Official HashiCorp Vault Chart
+keywords: ["vault", "security", "encryption", "secrets", "management", "automation", "infrastructure"]
+sources:
+  - https://github.com/hashicorp/vault
+  - https://github.com/hashicorp/vault-helm
+  - https://github.com/hashicorp/vault-k8s
+  - https://github.com/hashicorp/vault-csi-provider
