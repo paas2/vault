@@ -10,9 +10,9 @@ spec:
   http:
   - match:
     - uri:
-        exact: /
+        exact: /vault
     route:
     - destination:
         host: helm-vault
         port:
-          number: 80                   
+          number: 8200                   
