@@ -4,18 +4,18 @@ metadata:
   name: vault
 spec:
   hosts:
-  - "*"
+  - "vault.paas2.com"
   gateways:
   - vault
   http:
   - name: "vault-v1"
-    match:
-    - uri:
-        prefix: "/vault"
+    # match:
+    # - uri:
+    #     prefix: "/vault"
     # - uri:
     #     prefix: "/consumercatalog"
-    rewrite:
-      uri: "/"
+    # rewrite:
+    #   uri: "/"
     route:
     - destination:
         host: helm-vault.vault.svc.cluster.local
