@@ -14,8 +14,8 @@ spec:
         prefix: "/vault"
     # - uri:
     #     prefix: "/consumercatalog"
-    # rewrite:
-    #   uri: "/newcatalog"
+    rewrite:
+      uri: "/"
     route:
     - destination:
         host: helm-vault.vault.svc.cluster.local
