@@ -13,6 +13,6 @@ spec:
         exact: /vault
     route:
     - destination:
-        host: helm-vault
+        host: helm-vault.vault.svc.cluster.local
         port:
           number: 8200                   
