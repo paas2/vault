@@ -8,11 +8,26 @@ spec:
   gateways:
   - vault
   http:
-  - match:
+  - name: "vault-v1"
+    match:
     - uri:
-        exact: /vault
+        prefix: "/vault"
+    # - uri:
+    #     prefix: "/consumercatalog"
+    # rewrite:
+    #   uri: "/newcatalog"
     route:
     - destination:
         host: helm-vault.vault.svc.cluster.local
         port:
-          number: 8200                   
+          number: 8200        
+        # subset: v2  
+  # http:
+  # - match:
+  #   - uri:
+  #       exact: /vault
+  #   route:
+  #   - destination:
+  #       host: helm-vault.vault.svc.cluster.local
+  #       port:
+  #         number: 8200                   
