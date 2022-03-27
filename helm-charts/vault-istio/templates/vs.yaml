@@ -4,14 +4,11 @@ metadata:
   name: vault
 spec:
   hosts:
-  - "192.168.99.172"
+  - "*"
   gateways:
   - vault
   http:
   - name: "vault-v1"
-    match:
-    - uri:
-        prefix: "/"
     route:
     - destination:
         host: helm-vault.vault.svc.cluster.local
