@@ -4,7 +4,7 @@ metadata:
   name: vault
 spec:
   hosts:
-  - "192.168.99.172"
+  - "*"
   gateways:
   - vault
   http:
