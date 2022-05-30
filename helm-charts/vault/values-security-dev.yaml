@@ -44,7 +44,7 @@ injector:
 
   # External vault server address for the injector to use. Setting this will
   # disable deployment of a vault server along with the injector.
-  externalVaultAddr: ""
+  externalVaultAddr: "192.168.65.2:8200"
 
   # image sets the repo and tag of the vault-k8s image to use for the injector.
   image:
