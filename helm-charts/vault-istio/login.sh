@@ -1,4 +1,4 @@
-export VAULT_ADDR=http://192.168.99.172:31049
+export VAULT_ADDR=http://192.168.99.109:30752
 export VAULT_TKN=$(cat cluster-keys.json | jq -r ".root_token") 
 export VAULT_TOKEN=root
 
