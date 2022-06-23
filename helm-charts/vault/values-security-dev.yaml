@@ -44,7 +44,7 @@ injector:
 
   # External vault server address for the injector to use. Setting this will
   # disable deployment of a vault server along with the injector.
-  externalVaultAddr: http://host.minikube.internal:8200
+  externalVaultAddr: host.minikube.internal:8200
 
   # image sets the repo and tag of the vault-k8s image to use for the injector.
   image:
